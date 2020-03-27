@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Cool Things</title>
+    <!-- Google Places -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0m4XclxBQVjg46CybgWBctk1RYEI2YNo&libraries=places">
+    </script>
+
+</head>
+
+
+<body>
+
+    <section id="landing" class="section is-small">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 is-offset-3">
+                    <h1 id="h1-title"
+                        class="anim-1 title is-uppercase has-text-centered is-size-1 has-text-white landing-el">
+                        Cool Things
+                    </h1>
+                    <h2 id="h2-desc" class="anim-1 has-text-centered is-size-4 has-text-white landing-el">Grub | Beer |
+                        Music</h2>
+                    <div class="has-text-centered">
+                        <img src="img/sunglasses.png" class="anim-2 glasses has-text-centered m-t-lg landing-el"
+                            alt="sunglasses">
+                    </div>
+
+                    <div class="has-text-centered m-t-xl m-b-sm">
+                        <h3 id="h3-desc" class="anim-2 is-size-5 has-text-white landing-el">Select a Cool Thing</h3>
+
+                        <button id="restaurant"
+                            class="anim-2 button is-primary is-inverted is-outlined has-border-white is-rounded toggle m-sm is-medium landing-el"
+                            data-attr="0">
+                            <span class="icon is-small">
+                                <i class="fas fa-utensils"></i>
+                            </span>
+                        </button>
+                        <button id="beer"
+                            class="anim-2 button is-primary is-inverted is-outlined is-rounded toggle m-sm is-medium is-active landing-el"
+                            data-attr="1">
+                            <span class="icon is-small">
+                                <i class="fas fa-beer"></i>
+                            </span>
+                        </button>
+
+                        <button id="music"
+                            class="anim-2 button is-primary is-inverted is-outlined is-rounded toggle m-sm is-medium landing-el"
+                            data-attr="2">
+                            <span class="icon is-small">
+                                <i class="fas fa-music"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <input id="pac-input" class="anim-3 input is-rounded is-large m-t-sm m-b-sm landing-el" type="text"
+                        placeholder="City">
+                    <button id="search-btn"
+                        class="anim-3 button is-medium is-rounded is-primary is-fullwidth m-t-sm m-b-xl landing-el">Show
+                        Me Cool
+                        Things</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-2" class="p-t-lg has-text-centered section-2">
+        <div id="query-results" class="container cards-container">
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <div id="service"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+</body>
+
+</html>
